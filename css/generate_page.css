@@ -112,6 +112,11 @@ body {
     margin-top: 20px;
 }
 
+.button-group {
+    display: flex;
+    align-items: center;
+}
+
 .upload-button,
 .try-again-button {
     padding: 10px 20px;
@@ -124,12 +129,21 @@ body {
 .upload-button {
     background-color: #007bff;
     color: #fff;
+    margin-right: 10px;
+    /* Ensures spacing between the upload button and age input */
+}
+
+.age-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .try-again-button {
     background-color: #ccc;
     color: #333;
 }
+
 
 .form-section {
     flex: 1;
