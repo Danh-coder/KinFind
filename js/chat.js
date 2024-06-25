@@ -1,4 +1,14 @@
+function toggleMessageBoard() {
+    const messageBoard = document.getElementById("messageBoard");
+    if (messageBoard.style.display === "block") {
+        messageBoard.style.display = "none";
+    } else {
+        messageBoard.style.display = "block";
+    }
+}
+
 function openChat() {
+    console.log('open chat');
     const chatPopup = document.getElementById("chatPopup");
     chatPopup.style.display = "block";
     chatPopup.style.bottom = "20px";
@@ -55,7 +65,7 @@ function sendMessage() {
 }
 
 document.querySelector(".chat-footer button").addEventListener("click", sendMessage);
-document.querySelector(".chat-footer input").addEventListener("keypress", function(event) {
+document.querySelector(".chat-footer input").addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         sendMessage();
     }
