@@ -116,6 +116,7 @@ body {
 .result-info {
     flex-grow: 1;
     text-align: left;
+    padding-right: 20px;
 }
 
 .result-info p {
@@ -141,6 +142,15 @@ body {
     margin-top: 5px;
 }
 
+.description {
+    color: #777;
+    margin-top: 10px;
+}
+
+.description .date {
+    color: #777;
+}
+
 .profile-button {
     background-color: #007bff;
     color: #fff;
@@ -149,9 +159,11 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
+    text-align: center;
+    text-decoration: none;
 }
 
-.profile-button a {
-    text-decoration: none;
-    color: #fff;
+.profile-button:hover {
+    background-color: #0056b3;
 }
+

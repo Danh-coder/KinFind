@@ -33,7 +33,11 @@ form {
     align-items: center;
 }
 
-input[type="email"], input[type="password"], input[type="text"], select, textarea {
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select,
+textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -43,13 +47,17 @@ input[type="email"], input[type="password"], input[type="text"], select, textare
     box-sizing: border-box;
 }
 
-.name-fields, .location-fields, .date-fields {
+.name-fields,
+.location-fields,
+.date-fields {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.name-fields input, .location-fields select, .date-fields input {
+.name-fields input,
+.location-fields select,
+.date-fields input {
     width: 48%;
 }
 
@@ -75,6 +83,36 @@ textarea {
 .picture-upload input[type="file"] {
     display: none;
 }
+
+.gender-radio-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.gender-radio-buttons p {
+    margin-bottom: 5px;
+    /* Adjust spacing as needed */
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute labels evenly */
+    width: 100%;
+}
+
+.radio-buttons label {
+    display: flex;
+    align-items: center;
+}
+
+
+/* 
+.gender-radio-buttons input[type="radio"] {
+    margin-right: 5px;
+} */
 
 button {
     padding: 10px;

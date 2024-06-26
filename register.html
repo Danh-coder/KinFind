@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KinFind Registration</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="form-container">
         <h1>KINFIND</h1>
@@ -35,6 +37,19 @@
                 <label for="picture">Add Picture Here</label>
                 <input type="file" id="picture" required>
             </div>
+            <div class="gender-radio-buttons">
+                <p>Describe your need</p>
+                <div class="radio-buttons">
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male" required> I've lost my family
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female" required> I'm looking for my
+                        relative
+                    </label>
+                </div>
+            </div>
+
             <textarea placeholder="Describe what happened on the day you lost your relative" required></textarea>
             <input type="email" placeholder="Email" required>
             <input type="password" placeholder="Password" required>
@@ -47,4 +62,5 @@
         <p class="toggle-form">Already have an account? <a href="login.html">Login here.</a></p>
     </div>
 </body>
+
 </html>
